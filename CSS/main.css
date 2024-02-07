@@ -5,6 +5,9 @@ body{
     font-size: 16px;
     line-height: 18px;
 }
+h1, h2, h3, h4, h5, h6{
+    display: block;
+}
 .main-container{
     display: flex;
     flex-direction: row;
