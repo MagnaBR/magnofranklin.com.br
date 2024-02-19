@@ -1,10 +1,18 @@
+/***
+ * 
+ */
+
+
+
 console.log('ANDREZÃO BORA FARMING 22!');
 
 
 
 (function(w, d){
-    let title = d.getElementById('title');
-    if (title) {
-        title.innerText += ' | Franklin Magno';
+
+    let t = d.getElementById('title');
+    if (t) {
+        t.innerText += ' | Franklin Magno';
     }
+
 })(window, document);
