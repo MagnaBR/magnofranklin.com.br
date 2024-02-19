@@ -1,4 +1,4 @@
-let sw_version = 'v0.01';
+let sw_version = 'v0.011';
 
 const addResourcesToCache = async (resources) => {
     const cache = await caches.open(sw_version);
@@ -15,7 +15,7 @@ self.addEventListener("install", (event) => {
 
 self.addEventListener("fetch", (event) => {
     console.log(event);
-    //event.respondWith();
+    event.respondWith(caches.match(event.request));
 });
 
 const deleteCache = async (key) => {
