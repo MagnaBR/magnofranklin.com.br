@@ -1,4 +1,4 @@
-let sw_version = 'v0.011';
+let sw_version = 'v0.045';
 
 const addResourcesToCache = async (resources) => {
     const cache = await caches.open(sw_version);

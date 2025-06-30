@@ -1,15 +1,3 @@
-/***
- * 
- */
-
-
-
-
-console.log('ANDREZÃO BORA FARMING 22!');
-
-
-
-
 /**
  * SW
  */
@@ -33,13 +21,11 @@ const registerServiceWorker = async () => {
   };
   registerServiceWorker();  
 
-
-
 (function(w, d){
 
     let t = d.getElementById('title');
     if (t) {
-        t.innerText += ' | Franklin Magno';
+       // t.innerText += ' | Franklin Magno';
     }
 
 })(window, document);
