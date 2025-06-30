@@ -1,6 +1,7 @@
 /**
  * SW
  */
+/*
 const registerServiceWorker = async () => {
     if ("serviceWorker" in navigator) {
       try {
@@ -20,6 +21,7 @@ const registerServiceWorker = async () => {
     }
   };
   registerServiceWorker();  
+  */
 
 (function(w, d){
 
