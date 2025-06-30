@@ -1,48 +1,220 @@
 <!DOCTYPE html>
-<html lang="pt-BR" dir="ltr">
+<html lang="pt-BR">
 <head>
-    <!-- DEFAULT HEAD BEGIN -->
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #141822;
+      color: #333;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #141822;
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 18px;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+       background-color: #f8f9fa;
+    }
+
+    .container .container_in {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    .projects, .tech-stack {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .tech {
+      background-color: #f1f1f1;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #141822;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 8px;
+      color: white;
+      text-decoration: none;
+      background-color: #141822;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 0.3s;
+      border: 1px solid transparent;
+    }
+
+    .contact a:hover {
+      background: white;
+       color: black;
+       border: 1px solid #808080;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+
+  <!-- DEFAULT HEAD BEGIN -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ROBOTS -->
     <meta name="robots" content="noindex">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
     <!-- TITLE -->
-    <title id="title">Em breve? Talvez!</title>
+     <title>Franklin Magno — Desenvolvedor Web & Mobile</title>
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="./CSS/main.css" />
+    <link rel="stylesheet" href="/CSS/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
     <!-- MAIN JS -->
-    <script defer type="text/javascript" src="./JS/main.js"></script>
+    <script defer type="text/javascript" src="/JS/main.js"></script>
     <!-- Font Awesome Solid + Brands -->
-    <link href="./CSS/fontawesome/fontawesome-free-6.5.1-web/css/fontawesome.css" rel="stylesheet">
-    <link href="./CSS/fontawesome/fontawesome-free-6.5.1-web/css/brands.css" rel="stylesheet">
-    <link href="./CSS/fontawesome/fontawesome-free-6.5.1-web/css/solid.css" rel="stylesheet">
+    <link href="/CSS/fontawesome/fontawesome-free-6.5.1-web/css/fontawesome.css" rel="stylesheet">
+    <link href="/CSS/fontawesome/fontawesome-free-6.5.1-web/css/brands.css" rel="stylesheet">
+    <link href="/CSS/fontawesome/fontawesome-free-6.5.1-web/css/solid.css" rel="stylesheet">
+
+
 </head>
 <body>
-    <div class="">
-        
-        <div class="row">
-            <div class="ta_center">
-                <h1>Em breve?</h1>
-            </div>
-        </div>
 
-        <div class="row">
-            <footer class="ta_center footer">
-                <a href="https://github.com/MagnaBR/magnofranklin.com.br" target="_blank" rel="noopener">
-                    <i title="GitHub" aria-label="GitHub" class="fa-brands fa-github-square"></i>
-                </a>
-            </footer>
-        </div>
+<header>
+  <h1>Franklin Magno</h1>
+  <p>Desenvolvedor Web e Mobile • Foco em sistemas práticos e eficientes</p>
+  <nav>
+    <a href="#projetos">Projetos</a>
+    <a href="#tecnologias">Tecnologias</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
 
+<div class="container">
+
+  <div class="container_in">
+
+    <section id="projetos">
+    <h2>Projetos atualmente</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Setup Master</h3>
+        <p>Aplicativo Android e sistema web integrados para registrar parâmetros de setup de máquinas no setor de empacotamento.</p>
+      </div>
+      <div class="card">
+        <h3>Gestor de Produtos</h3>
+        <p>Módulo web para controle de produtos e suas variações, incluindo paletização, protocolos e bobinas.</p>
+      </div>
+      <div class="card">
+        <h3>API RESTful em PHP</h3>
+        <p>Backend leve e estruturado com autenticação, JWT e respostas padronizadas em JSON.</p>
+      </div>
     </div>
+  </section>
+
+  <section id="tecnologias">
+    <h2>Tecnologias</h2>
+    <div class="tech-stack">
+      <div class="tech">Flutter + Dart</div>
+      <div class="tech">PHP + MySQL</div>
+      <div class="tech">HTML + CSS + JS</div>
+      <div class="tech">Git e GitHub</div>
+      <div class="tech">WAMP + phpMyAdmin</div>
+      <div class="tech">Android Studio</div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <div class="contact">
+      <a href="mailto:contato@magnofranklin.com.br">Email</a>
+      <a href="https://github.com/MagnaBR" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2025 Franklin Magno — Todos os direitos reservados.
+</footer>
+
 </body>
 </html>
