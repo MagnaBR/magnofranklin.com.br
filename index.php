@@ -1,7 +1,7 @@
 <?php
 
 
-
+$app_version = '0.1';
 
 
 
@@ -31,7 +31,7 @@
     <link rel="manifest" href="/favicon_io/site.webmanifest">
 
     <!-- MAIN CSS -->
-    <link href="/CSS/new.css" rel="stylesheet">
+    <link href="/CSS/new.css?v=<?= $app_version; ?>" rel="stylesheet">
 
     <!-- Font Awesome Solid + Brands -->
     <link href="/CSS/fontawesome/fontawesome-free-6.5.1-web/css/fontawesome.css" rel="stylesheet">
@@ -39,7 +39,7 @@
     <link href="/CSS/fontawesome/fontawesome-free-6.5.1-web/css/solid.css" rel="stylesheet">
 
     <!-- MAIN JS -->
-    <script defer type="text/javascript" src="/JS/main.js"></script>
+    <script defer type="text/javascript" src="/JS/main.js?v=<?= $app_version; ?>"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
