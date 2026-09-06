@@ -454,7 +454,7 @@
 
                     <a
                         class="button primary"
-                        href="mailto:SEU_EMAIL@EXEMPLO.COM">
+                        href="mailto:contato@magnofranklin.com.br">
 
                         Email
 
@@ -462,7 +462,7 @@
 
                     <a
                         class="button secondary"
-                        href="SEU_GITHUB"
+                        href="https://github.com/MagnaBR"
                         target="_blank"
                         rel="noopener noreferrer">
 
@@ -484,7 +484,7 @@
 
 <footer>
 
-    &copy; 2026 Franklin Magno.
+    &copy; <?= date('Y', time()); ?> Franklin Magno.
     Desenvolvido por mim, obviamente.
 
 </footer>
