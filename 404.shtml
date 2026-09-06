@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>404 — Franklin Magno</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+
+    <!-- MAIN CSS -->
+    <link href="/CSS/404.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header>
+
+        <div class="nav">
+
+            <a href="/" class="logo">
+                franklin<span>.dev</span>
+            </a>
+
+            <a href="/" class="home-link">
+                /home
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+        <section class="error">
+
+
+            <div class="error-code">
+                4<span>0</span>4
+            </div>
+
+
+            <div class="terminal-label">
+                request.status
+            </div>
+
+
+            <h1>
+                Página não encontrada.
+            </h1>
+
+
+            <p class="description">
+
+                O endereço solicitado não existe ou foi movido.
+                Nada foi quebrado permanentemente — provavelmente.
+
+            </p>
+
+
+
+            <div class="terminal">
+
+
+                <div class="terminal-header">
+
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+
+                    <span class="terminal-title">
+                        error.log
+                    </span>
+
+                </div>
+
+
+                <div class="terminal-body">
+
+                    <div class="comment">
+                        // request terminated
+                    </div>
+
+                    <div>
+                        <span class="key">status</span>:
+                        <span class="error-text">
+                            404
+                        </span>
+                    </div>
+
+                    <div>
+                        <span class="key">resource</span>:
+                        <span class="value">
+                            not_found
+                        </span>
+                    </div>
+
+                    <div>
+                        <span class="key">server</span>:
+                        <span class="value">
+                            magnofranklin.com.br
+                        </span>
+                    </div>
+
+                    <div>
+                        <span class="key">suggestion</span>:
+                        <span class="value">
+                            return_home()
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="actions">
+
+                <a href="/" class="button primary">
+
+                    Voltar ao início
+
+                </a>
+
+
+                <a href="/#projetos" class="button secondary">
+
+                    Ver projetos
+
+                </a>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        &copy; Since 1996 Franklin Magno.
+
+    </footer>
+
+
+</body>
+
+</html>

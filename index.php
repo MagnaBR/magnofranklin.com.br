@@ -484,7 +484,7 @@
 
 <footer>
 
-    &copy; <?= date('Y', time()); ?> Franklin Magno.
+    &copy; Since 1996. Franklin Magno.
     Desenvolvido por mim, obviamente.
 
 </footer>
